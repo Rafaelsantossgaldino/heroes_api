@@ -42,9 +42,16 @@ group :development do
   gem "faker", "~> 2.20", :group => :development
 end
 
+group :test do
+  gem "shoulda-matchers", "~> 5.1"
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
   gem 'pg', '~> 1.3', '>= 1.3.5'
 end
+
+gem "rspec-rails", "~> 5.1"
+
